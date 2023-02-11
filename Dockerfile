@@ -1,7 +1,7 @@
 FROM tomcat
 
 MAINTAINER dushyants341@gmail
-RUN cp target/*.jar /opt/tomcat/webapps/
+COPY target/*.jar /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
