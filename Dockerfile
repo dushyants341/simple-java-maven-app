@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 
 MAINTAINER dushyants341@gmail.com
 
