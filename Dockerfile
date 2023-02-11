@@ -1,6 +1,6 @@
 FROM centos
 
-MAINTAINER hello@gritfy.com
+MAINTAINER dushyants341@gmail.com
 
 RUN mkdir /opt/tomcat/
 
@@ -13,8 +13,6 @@ RUN mv apache-tomcat-8.5.40/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 RUN cp target/*.jar /opt/tomcat/webapps/
-WORKDIR /opt/tomcat/webapps
-RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
 
 EXPOSE 8080
 
