@@ -1,4 +1,4 @@
-FROM tomcat9
+FROM tomcat
 
 MAINTAINER dushyants341@gmail
 RUN cp target/*.jar /opt/tomcat/webapps/
